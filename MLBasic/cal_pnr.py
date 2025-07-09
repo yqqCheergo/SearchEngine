@@ -1,4 +1,3 @@
-import numpy as np
 with open("model_score.txt", 'r') as f:   # qids \t probs \t labels \t ... \t score
     data = f.readlines()
 
