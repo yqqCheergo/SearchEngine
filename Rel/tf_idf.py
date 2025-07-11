@@ -30,6 +30,7 @@ def compute_idf(corpus):
     return idf
 
 idf = compute_idf(corpus)
+print("每个词的IDF: ", idf)
 
 
 # ------ 步骤2：计算目标文档d的TF ------
@@ -46,18 +47,19 @@ def compute_tf(text):
     return tf
 
 tf_d = compute_tf(document_d)
+print("每个词的TF: ", dict(tf_d))
 
 
 # ------ 步骤3：计算目标文档d的TF—IDF ------
 tfidf_d = {}
 for word, tf_val in tf_d.items():
     tfidf_d[word] = tf_val * idf.get(word, 0)    # 未登录词IDF=0
+print("目标文档d中每个词的TF-IDF: ", tfidf_d)
 
 
 # ------ 步骤4：计算查询词q和目标文档d的相关性 ------
 query_words = query_q.split()
 score = 0
 for word in query_words:
-    score += tfidf_d.get(word, 0)  # 累加q中分词在d中的TF-IDF值
-
+    score += tfidf_d.get(word, 0)    # 累加q中分词在d中的TF-IDF值。若d中无该词记为0
 print(f"查询词q和目标文档d的TF-IDF相关性分数: {score:.4f}")
