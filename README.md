@@ -8,6 +8,8 @@
 
 #### 机器学习基础 (Chapter 2)
 
+排序任务：[pairwise logistic loss](https://github.com/yqqCheergo/SearchEngine/tree/main/MLBasic/loss)
+
 pairwise评价指标：[正逆序比PNR](https://github.com/yqqCheergo/SearchEngine/blob/main/MLBasic/cal_pnr.py)
 
 #### 什么决定用户体验 (Chapter 3)
