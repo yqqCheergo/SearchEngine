@@ -57,7 +57,7 @@ def pairwise_logistic_loss(labels,
     else:
         pairwise_weights = weights
 
-    # 9. 难例挖掘 (OHEM)
+# 9. 难例挖掘 (OHEM)
     if ohem_ratio == 1.0:
         return torch.sum(losses * pairwise_weights) / torch.max(
             torch.sum((pairwise_weights > 0).float()),
