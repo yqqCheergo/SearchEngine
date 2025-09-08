@@ -8,7 +8,11 @@
 
 #### 机器学习基础 (Chapter 2)
 
-排序任务：[pairwise logistic loss](https://github.com/yqqCheergo/SearchEngine/tree/main/MLBasic/loss)
+二分类任务：[交叉熵损失Cross Entropy](https://github.com/yqqCheergo/SearchEngine/blob/main/MLBasic/loss/cross_entropy_loss.py)
+
+排序任务：[pairwise logistic loss(Tensorflow1.4.0)](https://github.com/yqqCheergo/SearchEngine/blob/main/MLBasic/loss/tf1_pairwise_logistic_loss.py) & [pairwise logistic loss(Tensorflow2.8.0)](https://github.com/yqqCheergo/SearchEngine/blob/main/MLBasic/loss/tf2_pairwise_logistic_loss.py) & [pairwise logistic loss(PyTorch)](https://github.com/yqqCheergo/SearchEngine/blob/main/MLBasic/loss/torch_pairwise_logistic_loss.py) 以及[对应说明](https://github.com/yqqCheergo/SearchEngine/blob/main/MLBasic/loss/loss.md)
+
+pointwise评价指标：[AUC(Python)](https://github.com/yqqCheergo/SearchEngine/blob/main/MLBasic/auc.py) & [AUC(C++)](https://github.com/yqqCheergo/SearchEngine/blob/main/MLBasic/cal_auc.cpp) 以及拓展的[GAUC(Python)](https://github.com/yqqCheergo/SearchEngine/blob/main/MLBasic/gauc.py)
 
 pairwise评价指标：[正逆序比PNR](https://github.com/yqqCheergo/SearchEngine/blob/main/MLBasic/cal_pnr.py)
 
